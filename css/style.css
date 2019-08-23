@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One&display=swap');
+
+h3, h2{
+  margin:15px;
+  text-align: center;
+}
+h4{
+  margin:0px 15px;
+}
+
+.game-settings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+}
+
+#game-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px; 
+}
+
+.instructions{
+margin:60px 0 20px;
+}
+
+.game-body{
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+}
+
+.how-to{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+#ongoing-game-infos{
+  margin: auto 50px; 
+  float:right;
+  text-align: start;
+  display:flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start;
+  height: 670px;
+  background: #d4cfb7;
+  color: #2c2916;
+  z-index: 100;
+  width: 320px;
+  position: relative;
+  transition: left .4s linear;
+  left:-240px; 
+  margin-left: 0px; 
+}
+
+#btn-lunch-the-game{
+
+  width: 150px;
+  height :40px;
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2c2916;
+  
+}
+
+#btn-lunch-the-game:hover{
+  font-size: 25px;
+  color:  #d4cfb7;
+  box-shadow: 5px 5px 10px black;
+}
+
+#level-select-box{
+  width: 150px;
+  height :40px;
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2c2916;
+  margin-bottom: 15px;
+}
+
+#level-selection{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: solid #2c2916;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  padding-bottom: 28px;
+}
+
+.how-to{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid #2c2916;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+#sidebar.is-active {
+  left: 0;
+}
+
+#btn-settings {
+  margin: 17px 0;
+  font-size: 40px;
+  color:  #d4cfb7;
+  margin-left:10px;
+}
+
+.explode{
+  background: url(../img/explosion.gif);
+  background-size: cover;
+}
+
+#sidebar.is-active {
+  left: 0;
+}
+
+.game-info{
+  margin: 10px;
+}
+
+#playing-area{
+  width: 1900px;
+  height: 650px;
+  border: 10px solid #d4cfb7;
+  margin-right: 50px;
+  overflow: hidden;
+  background-image: url("../img/Steel-Division-03.jpg");
+  /* filter: grayscale(1); */
+  /* filter: saturate(15); */
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+}
+
+.the-game{
+  margin: 20px 0px 10px 0px;;
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.player{
+  width:60px;
+  height:60px;
+  position: absolute;
+  background: url("../img/tank 3 canons.png");
+  background-size: cover;
+  filter: saturate(10);
+}
+
+.laser{
+  width:10px;
+  height:10px;
+  background: black;
+  position:absolute;
+  filter: saturate(15);
+}
+
+.enemy{
+  width: 30px;
+  height: 30px;
+  /* background: black; */
+  position: absolute;
+  filter: saturate(7);
+}
+
+
+.hide{
+  visibility: hidden;
+}
+
+.modal{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background: rgba(65, 60, 60, 0.5);
+  border: solid #d4cfb7;
+  border-radius: 5px;
+  padding: 20px;
+  top: 40%;
+  left:40%;
+}
+
+.btn{
+  background: #2c2916;
+  color:  #d4cfb7;
+  font-family: 'Black Ops One', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #2c2916;
+  margin:10px 20px;
+}
+
+.game-over{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  background: url(../img/military\ death.jpg);
+  width:600px;
+  height: 450px;
+  background-size: cover;
+  border: solid #d4cfb7;
+  border-radius: 5px;
+  top: 30%;
+  left:30%;
+}
+.game-over .btn-wrap{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -50px;
+}
+
+
+.modal-title{
+  text-align: center;
+}
+
+.game-over .btn{
+  width: 200px;
+}
+
+.game-completed{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  background: url(../img/giphy-decoration.gif);
+  width:600px;
+  height: 450px;
+  background-size: cover;
+  border: solid #d4cfb7;
+  border-radius: 5px;
+  top: 30%;
+  left:30%;
+}
+
+.game-completed .btn{
+  width: 200px;
+  margin-bottom: 50px;
+}
+
+.explosion{
+  position: absolute;
+  z-index: 10;
+  width : 15px;
+  height: 15px;
+}
+
+.blink {
+  animation : 0.5s infinite blink;
+}
+
+@keyframes blink {
+  0%, 24.9%,75.1% ,100% {
+    heigh:0;
+    width:0;
+    /* padding:100px 150px */
+  }
+  25%, 75% {
+    height:60px;
+    width:60px;
+    /* padding:0 0; */
+  }
+}

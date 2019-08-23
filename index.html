@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="text/javascript" src="./js/player.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script type ="text/javascript" src="./js/laser.js"></script>
+  <script type ="text/javascript" src="./js/enemies.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+  <title>Survive</title>
+</head>
+<body class="game-body">
+  <header id="game-header">
+    <i id="btn-settings" class="fas fa-sliders-h"></i>
+    <h1 id="game-name">Survive !</h1>
+    <div id="ongoing-game-infos">
+        <h3 class= "game-info" id="lives-count">Lives: 3</h3>
+        <h3 class= "game-info" id ="level-count">Level: Easy</h3>
+    </div>
+  </header>
+  <div class="the-game">
+    <div class ="game-settings is-active" id="sidebar">
+      <section id="level-selection">
+        <h3 for="level-selection-box">Select Level</h3>
+        <select name="level-selection-box" id="level-select-box">
+          <option value="Easy">Easy</option>
+          <option value="Medium">Medium</option>
+          <option value="Hard">Hard</option>
+          <option value="Extreme">Extreme</option>
+        </select>
+        <button id="btn-lunch-the-game">Let's Go !</button>
+      </section>
+      
+      <section class="instructions">
+        <h2>Instructions</h2>
+        <h3>1. How to Move</h3>
+        <div  id="instructions">
+          <div class="how-to">
+            <h4>Forward</h4>
+            <h4>↑</h4>
+            <h4>Left ← <span> Move </span> → Right</h4>
+            <h4>↓</h4>
+            <h4>Backwards</h4>
+          </div>
+          <h3>2. How to Shoot</h3>
+          <div class="how-to">
+            <h4>Z</h4>
+            <h4>↑</h4>
+            <h4>Q ↔ D</h4>
+          </div>
+      </div>
+      </section>
+    </div>
+    <div class= "playing-area" id="playing-area">
+    </div>
+</div>
+<div class="modal hide" id="level-completed">
+  <h1 class="modal-title">Level Completed</h1>
+  <button id="btn-next-level" class="btn">Next Level</button>
+  <button id="btn-quit-game" class="btn">Quit</button>
+</div>
+<div class="game-over hide" id="game-over" >
+    <h1 class="modal-title">Game Over</h1>
+    <div class="btn-wrap">
+        <button id="btn-try-again" class="btn">Try Again</button>
+        <button id="btn-quit-everything" class="btn">Quit</button>
+    </div>
+</div>
+<div class="game-completed hide" id="game-completed" >
+    <h1 class="modal-title">Game Completed<br>Congratulations !! </h1>
+    <div class="btn-wrap">
+        <button id="btn-quit" class="btn">Quit</button>
+    </div>
+</div>
+</body>
+
+</html>
