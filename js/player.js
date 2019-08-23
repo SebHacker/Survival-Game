@@ -121,14 +121,14 @@ function displayExplosion(gameElement){
     gameElement.src = "./img/explosion-sticker.gif";
     window.setTimeout(() => {
       if (gameElement == player){
-        gameElement.src = "./img/tank 3 canons.png";
+        gameElement.src = "./img/tank-3-canons.png";
       } 
   }, 1000)
   } else {
     gameElement.src ="./img/explosion-2.gif"
     window.setTimeout(() => {
       if (gameElement == player){
-        gameElement.src = "./img/tank 3 canons.png";
+        gameElement.src = "./img/tank-3-canons.png";
       } // else à ajouter pour les ennemis ************
     }, 500)
   }

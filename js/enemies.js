@@ -38,7 +38,7 @@ function sendEnemy(source){
 function createEnemy() {
     // return document.createElement('div');
     let newEnemy = document.createElement("img");
-    newEnemy.src = "./img/walking zombie.gif";
+    newEnemy.src = "./img/walking-zombie.gif";
     return newEnemy;
 }
 

@@ -13,7 +13,7 @@ var laserDirection ={
 
 function lunchLaser(){
   let laser = document.createElement("img");
-  laser.src ="../img/Bomb_1.png";
+  laser.src ="./img/Bomb_1.png";
   // let laser = document.createElement("div");
   return laser; 
 }
