@@ -38,7 +38,7 @@ function sendEnemy(source){
 function createEnemy() {
     // return document.createElement('div');
     let newEnemy = document.createElement("img");
-    newEnemy.src = "../img/walking zombie.gif";
+    newEnemy.src = "./img/walking zombie.gif";
     return newEnemy;
 }
 
@@ -136,7 +136,7 @@ let lasers =[];
                 let currentenemyY = Math.floor(currentEnemy.style.top.replace("px","")); 
                 if (currentLaserX >= currentEnemyX && currentLaserX <= currentEnemyX +enemyWidth && currentLaserY >= currentenemyY && currentLaserY <= currentenemyY + enemyHeight){
                     console.log("ici 0");
-                    enemiesInField[j].HtmlElement.src ="../img/explosion-2.gif";
+                    enemiesInField[j].HtmlElement.src ="./img/explosion-2.gif";
                     playingArea.removeChild(enemiesInField[j].HtmlElement);
                     delete enemiesInField[j].HtmlElement;
                     enemiesInField.splice(j,1);
@@ -149,7 +149,7 @@ let lasers =[];
                 else if(currentLaserX + laserWidth <= currentEnemyX + enemyWidth && currentLaserX + laserWidth >= currentEnemyX && currentLaserY >= currentenemyY && currentLaserY <= currentenemyY +enemyHeight){
                     // displayExplosion(enemiesInField[j].HtmlElement);
                     console.log("ici 1");
-                    enemiesInField[j].HtmlElement.src ="../img/explosion-2.gif";
+                    enemiesInField[j].HtmlElement.src ="./img/explosion-2.gif";
                     playingArea.removeChild(enemiesInField[j].HtmlElement);
                     delete enemiesInField[j].HtmlElement;
                     enemiesInField.splice(j,1);

@@ -34,10 +34,6 @@
   // **********************
   function isGameOver(){
     if (playerLives == 0){
-    //   setTimeout(() => {
-    //     document.getElementById("player").classList.add("explosion");
-    // }, 1500);
-    //   document.getElementById("player").classList.remove("explosion");
       return true;
     }return false; 
   }
@@ -121,34 +117,19 @@ function upgradeLevel(level){
 
 
 function displayExplosion(gameElement){
-  // console.log("player");
-  
-  // // let parent = gameElement.parentElement;
-  // console.log(parent);
-  // const img = document.createElement("img");
   if (playerInjured ==false){
-    gameElement.src = "../img/explosion-sticker.gif";
-    // img.classList.add("explosion")
-    // gameElement.appendChild(img);
-    // console.log(parent);
+    gameElement.src = "./img/explosion-sticker.gif";
     window.setTimeout(() => {
       if (gameElement == player){
-        gameElement.src = "../img/tank 3 canons.png";
-      } // else {
-      //   gameElement.src = "../img/walking zombie.gif";
-      // }
+        gameElement.src = "./img/tank 3 canons.png";
+      } 
   }, 1000)
   } else {
-    gameElement.src ="../img/explosion-2.gif"
+    gameElement.src ="./img/explosion-2.gif"
     window.setTimeout(() => {
       if (gameElement == player){
-        gameElement.src = "../img/tank 3 canons.png";
+        gameElement.src = "./img/tank 3 canons.png";
       } // else à ajouter pour les ennemis ************
     }, 500)
   }
-
 }
-
-// function unkillablePlayer(){
-//   player.style.animation = blink() 2s infinite blink;
-// }

@@ -131,7 +131,7 @@ margin:60px 0 20px;
 }
 
 .explode{
-  background: url(../img/explosion.gif);
+  background: url("../img/explosion.gif");
   background-size: cover;
 }
 
@@ -223,7 +223,7 @@ margin:60px 0 20px;
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  background: url(../img/military\ death.jpg);
+  background: url("../img/military\ death.jpg");
   width:600px;
   height: 450px;
   background-size: cover;
@@ -254,7 +254,7 @@ margin:60px 0 20px;
   align-items: center;
   justify-content: space-between;
   position: absolute;
-  background: url(../img/giphy-decoration.gif);
+  background: url("../img/giphy-decoration.gif");
   width:600px;
   height: 450px;
   background-size: cover;

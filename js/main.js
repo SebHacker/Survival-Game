@@ -153,7 +153,7 @@ window.addEventListener("DOMContentLoaded", function(event) {
 
   playingArea = document.getElementById("playing-area");
   player = document.createElement("img");
-  player.src ="../img/tank 3 canons.png";
+  player.src ="./img/tank 3 canons.png";
   // player.style.image-orientation(45);
   const playBtn = document.getElementById ("btn-lunch-the-game");
   levelChoice = document.getElementById("level-select-box");
